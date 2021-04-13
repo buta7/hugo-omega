@@ -91,4 +91,4 @@ vi content/posts/hello.md
 
 ## Link
 
-* [Hugo Travelify Theme \| Hugo Themes](https://themes.gohugo.io/hugo-travelify-theme/)
+* [Omega Hugo Theme \| Hugo Themes](https://themes.gohugo.io/omega-hugo-theme/)
