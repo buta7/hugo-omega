@@ -28,10 +28,9 @@ git submodule add https://github.com/gethugothemes/omega-hugo.git themes/omega
 ```
 
 サイト設定
-g
+
 ```shell
-cp -pr themes/hugo-omega/exampleSite/{content,config.toml} .
-cp -pr themes/hugo-omega/archetypes .
+cp -pr themes/hugo-omega/exampleSite/{content,config.toml,static} .
 ```
 
 config.toml
@@ -60,15 +59,15 @@ git push -u origin main
 ## Github Actionsの利用
 
 * .github/workflows/gh-pages.yamlを作成
-    * ソースはmainブランチ
-    * 出力はpublicフォルダの内容をgh-pagesブランチ
-        * Github>Settings>Gighub Pages>Source>gh-pages branch
+  * ソースはmainブランチ
+  * 出力はpublicフォルダの内容をgh-pagesブランチ
+    * Github>Settings>Gighub Pages>Source>gh-pages branch
 
 ## 既存のレポジトリからクローンする場合
 
 ```shell
-git clone git@github.com:buta7/hugo-omega.git buta7-omega
-cd buta7-omega
+git clone git@github.com:buta7/hugo-omega.git
+cd hugo-omega
 git submodule update --init --recursive
 ```
 
